@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - project2 - Survey Form - Responsive Web Design - freeCodeCamp</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class='header'>
+    <h1 id='title' class='title-center'>Luke Berry's Gig Form</h1>
+    <p id='description' class='description-center'>Thanks for giving feedback on a recent Luke Berry Gig!</p> 
+  </header>
+    <form id='survey-form'>  
+      <div class='form-group'>
+        <label id='name-label' for='name'>Name</label>
+        <input 
+          type='text'
+          id='name'
+          name='name'
+          placeholder='Type your name'
+          required
+        />
+      </div>
+
+      <div class='form-group'>
+        <label id='email-label' for='email'>Email</label>
+        <input 
+          type='email' 
+          id='email'
+          name='email'
+          placeholder='Type your best email'
+          required
+        />
+      </div>
+
+      <div class='form-group'>
+        <label id='number-label' for='number'>Age</label>
+        <input 
+          type='number'
+          id='number'
+          name='number'
+          placeholder='Type your age'
+          min='10'
+          max='100'
+        />
+      </div>
+
+      <div class='form-group'>
+        <p>Where was this gig located?</p>
+        <select id='dropdown' name='place'>
+          <option value='rufusBar'>Rufus Bar</option>
+          <option value='fedocaDoCanal'>Fedoca do Canal</option>
+          <option value='privateParty'>A private party</option>
+          <option value="noRemember">I Don't Remember</option>
+        </select>
+      </div>
+
+      <div class='form-group'>
+        <p>How was this gig played?</p>
+        <label>
+          <input type='radio' name='gigType' value='voiceAndGuitar' checked/>Voice and Guitar</label>
+        <label>
+          <input type='radio' name='gigType' value='voiceOnly'/>Voice Only</label>
+        <label>
+          <input type='radio' name='gigType' value='guitarOnly'/>Guitar Only</label>
+      </div>
+
+      <div class='form-group'>
+        <p>What Genres were played?</p>
+        <label>
+          <input type='checkbox' name='genre' value='rock'/>Rock</label>
+        <label>
+          <input type='checkbox' name='genre' value='reggae'/>Reggae</label>
+        <label>
+          <input type='checkbox' name='genre' value='brazilian'/>Brazilian</label>
+        <label>
+          <input type='checkbox' name='genre' value='pop'/>Pop</label>
+        <label>
+          <input type='checkbox' name='genre' value='blues'/>Blues</label>
+        <label>
+          <input type='checkbox' name='genre' value='other'/>Other</label>
+      </div>
+
+      <div class='form-group'>
+        <p>Additional comments or suggestions?</p>
+        <textarea id='comments' name='comment' placeholder='Enter your comment'></textarea>
+      </div>
+
+      <div class='form-group'>
+        <button id='submit' type='submit'>Submit</button>
+      </div> 
+  </form>
+  <div class='self-love'>
+    <p>&copy Created by <a class='codepen-self-link' href='https://codepen.io/LukeberryPi' target='_blank'>Luke Berry</a></p>
+  </div>
+<!-- partial -->
+  
+</body>
+</html>
